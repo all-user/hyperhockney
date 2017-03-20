@@ -1,0 +1,19 @@
+{
+  "name": "hyperhockney",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Keita Okamoto",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/all-user/hyperhockney.git"
+  },
+  "keywords": [
+    "hyper"
+  ],
+  "bugs": {
+    "url": "https://github.com/all-user/hyperhockney/issues"
+  },
+  "homepage": "https://github.com/all-user/hyperhockney#readme",
+  "description": "hyper theme"
+}
