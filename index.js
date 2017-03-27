@@ -1,20 +1,20 @@
 const colors = {
   lightWhite: '#0B210A',
-  lightRed: '#8B3031',
-  lightGreen: '#21584B',
-  lightYellow: '#716343',
-  lightBlue: '#4180bf',
-  lightMagenta: '#655e7d',
-  lightCyan: '#5996AF',
-  lightBlack: '#CDC19E',
+  lightRed: '#d7242e',
+  lightGreen: '#00a09a',
+  lightYellow: '#e76d18',
+  lightBlue: '#3F76BC',
+  lightMagenta: '#92579E',
+  lightCyan: '#71BF67',
+  lightBlack: '#f0cce0',
   white: '#1D2B1A',
-  red: '#A94E4E',
-  green: '#27665D',
-  yellow: '#8B825A',
-  blue: '#4789c7',
-  magenta: '#787292',
-  cyan: '#87BAD0',
-  black: '#DDD5B6'
+  red: '#E42C36',
+  green: '#00ABAB',
+  yellow: '#ED7827',
+  blue: '#3a83e0',
+  magenta: '#a159b0',
+  cyan: '#79C475',
+  black: '#f0d2e3'
 };
 
 exports.decorateConfig = (config) => {
@@ -22,7 +22,7 @@ exports.decorateConfig = (config) => {
   // New configuration template
   const confObj = Object.assign({}, config, {
     foregroundColor: '#0B210A',
-    backgroundColor: `rgba(246, 238, 218, ${ config.backgroundOpacity || '1' })`,
+    backgroundColor: config.backgroundOpacity ? `rgba(253,254,254,${ config.backgroundOpacity })` : '#FDFEFE',
     borderColor: '#CDC19E',
     cursorColor: '#6EB293',
     theme: `${ config.theme || '' }`,
@@ -47,10 +47,10 @@ exports.decorateConfig = (config) => {
         background-color: rgba(0,0,0,.04)
       }
 
-      .tab_tab {
+      .tab_tab{
         border: none;
         color: #444444;
-        background-color: #E4DCCB;
+        background-color: #EBEBEC;
       }
 
       .tab_tab:hover {
@@ -59,7 +59,7 @@ exports.decorateConfig = (config) => {
 
       .tab_tab.tab_active {
         color: #444444;
-        background-color: rgba(246, 238, 218, ${ config.backgroundOpacity || '1' });
+        background-color: rgba(253,254,254,${ config.backgroundOpacity || '1' });
       }
 
       .tab_tab.tab_active:hover {
