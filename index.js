@@ -24,7 +24,7 @@ exports.decorateConfig = (config) => {
     foregroundColor: '#0B210A',
     backgroundColor: config.backgroundOpacity ? `rgba(253,254,254,${ config.backgroundOpacity })` : '#FDFEFE',
     borderColor: '#CDC19E',
-    cursorColor: '#6EB293',
+    cursorColor: '#00d7a6',
     theme: `${ config.theme || '' }`,
     colors,
     css: `
