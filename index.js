@@ -4,17 +4,17 @@ const colors = {
   lightGreen: '#00a09a',
   lightYellow: '#e76d18',
   lightBlue: '#3F76BC',
-  lightMagenta: '#92579E',
+  lightMagenta: '#AC82B4',
   lightCyan: '#71BF67',
-  lightBlack: '#f0cce0',
+  lightBlack: '#f0d2e3',
   white: '#1D2B1A',
   red: '#E42C36',
   green: '#00ABAB',
   yellow: '#ED7827',
   blue: '#3a83e0',
-  magenta: '#a159b0',
+  magenta: '#b88bc1',
   cyan: '#79C475',
-  black: '#f0d2e3'
+  black: '#f0dae7'
 };
 
 exports.decorateConfig = (config) => {
@@ -24,7 +24,7 @@ exports.decorateConfig = (config) => {
     foregroundColor: '#0B210A',
     backgroundColor: config.backgroundOpacity ? `rgba(253,254,254,${ config.backgroundOpacity })` : '#FDFEFE',
     borderColor: '#CDC19E',
-    cursorColor: '#00d7a6',
+    cursorColor: '#96E0F9',
     theme: `${ config.theme || '' }`,
     colors,
     css: `
